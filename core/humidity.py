@@ -8,7 +8,7 @@ def get_humidity():
     """Gets humidity data from the sensor
         Returns: tuple (humidity, temperature)
     """
-    humidity, temperature = Adafruit_DHT.read_retry(settings.HUMIDITY_PIN, settings.Hu)
+    humidity, temperature = Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, settings.HUMIDITY_PIN)
 
     if humidity is not None and temperature is not None:
         logging.info(f"TEMP: {humidity} AND HUMID: {temperature}")
