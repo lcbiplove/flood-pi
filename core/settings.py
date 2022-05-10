@@ -13,7 +13,7 @@ RIVER_ACCESS_USER = os.environ.get("RIVER_ACCESS_USER")
 RIVER_ACCESS_KEY = os.environ.get("RIVER_ACCESS_KEY")
 
 """River url where data is to be sent"""
-ADD_DATA_ROUTE = f"http://{os.environ.get('REMOTE_URL')}/rivers/{RIVER_ID}/water-level"
+ADD_DATA_ROUTE = f"http://{os.environ.get('REMOTE_SERVER_IP')}/rivers/{RIVER_ID}/water-level"
 
 """Physical Echo PIN of ultrasonic sensors in raspberry"""
 ULTRASONIC_ECHO_PIN = int(os.environ.get("ULTRASONIC_ECHO_PIN", 11))
