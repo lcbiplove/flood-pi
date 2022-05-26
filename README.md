@@ -14,5 +14,5 @@ source .venv/bin/activate
 pip3 install -r requirements.txt
 vim .env          # Add environment varaibles from portal (use .env.example as refs)
 python3 ready.py  # Check sensor data and output, till it become stable
-python3 main.py
+./cron.sh         # Start sensor sending data regularly
 ```

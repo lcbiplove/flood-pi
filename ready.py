@@ -62,3 +62,4 @@ def get_humidity():
 while True:
     print("Distance: ", get_distance())
     print("Humidity & Temperature: ", get_humidity())
+    print("")
